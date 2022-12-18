@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header><h1>Weather Dashboard</h1></header>
+
+    <aside> 
+        <h2>Search for a City:</h2>
+        <input type="text" id="search" placeholder="Input a city">
+        <button>Search</button>
+        <hr class="line-seperator">
+        <button>Atlanta</button>
+        <button>Denver</button>
+        <button>Seattle</button>
+        <button>San Francisco</button>
+        <button>Orlando</button>
+        <button>New York</button>
+        <button>Chicago</button>
+        <button>Austin</button>
+        </div>
+    </aside>
+
+    <section class="container">
+        <h2>Atlanta (9/13/2022)</h2>
+        <p>Temp: </p>
+        <p>Wind: </p>
+        <p> Humidity: </p>
+    </section> 
+
+    <section class="forecast">
+        <h3>5-Day Forecast:</h3>
+        <div class="weather-block">9/14/2022</div>
+        <div class="weather-block">9/15/2022</div>
+        <div class="weather-block">9/16/2022</div>
+        <div class="weather-block">9/17/2022</div>
+        <div class="weather-block">9/18/2022</div>
+    </section>
+
+    <script src="https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}"></script> 
+    <script src="assets/script.js"></script>
+
+</body>
+</html>
