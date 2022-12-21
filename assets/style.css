@@ -49,3 +49,7 @@ button:hover {
 hr.line-separator{
     border-top: 3px solid #bbb;
 }
+
+.weather-block {
+    border: 1mm solid black;
+}
