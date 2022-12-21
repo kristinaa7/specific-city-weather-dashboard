@@ -63,13 +63,15 @@ function fetchweather (city){
 }
 
 //find html code to get degree symbol//
+//putting information from API to get temp, wind, and humidity to display"
 function displayWeather(city,data){
     console.log(city,data);
-    currentDateEl.textContent =city + "  " + data.list[0].dt_txt.split(" ")[0];
+    currentDateEl.textContent = city + "  " + data.list[0].dt_txt.split(" ")[0];
     currentTempEl.textContent = "Temp:  " + data.list[0].main.temp + " deg F";
-    currentWindEl.textContent = ""
-    //finish the calls here for wind and humidity
+    currentWindEl.textContent = "Wind:  " + data.list[0].wind.speed + " MPH";
+    currentHumidityEl.textContent = "Humidity:   " + data.list[0].main.humidity + " %";
 }
+
 
 //for second day use day 8
 //for third day use day 16
